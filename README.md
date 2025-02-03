@@ -1,8 +1,16 @@
 # DemoSuzan
 # individuelltProjekt
-## Min tema för min applikation:
- Universitets samling: Använd ett API för att hämta fakta av universitet och spara dina favoriter i Local Storage.
- Jag skapa en applikation som använder sig av CRUD-funktionalitet (Create, Read, Update, Delete) tillsammans med Local Storage i webbläsaren.
+## Min tema :
+Tema: Vad valde de för tema: "Universitetsdatabas"
+## API-val och varför valde du just det?:
+API-val:  "Hipolabs Universities API & REST Countries API"
+"Hipolabs API ger en omfattande lista över universitet globalt,
+REST Countries API används för att hämta landsflaggor. men funkar inte med mig just nu"
+## Vad var de största utmaningarna under projektet? 
+Hantering av API-data.
+korrekt visning av landsflaggor med alt funkar brå men behöver annan API 
+implementering av favoritfunktionen med Local Storage.
+
  Jag änvända Nav för att hoppa mellan favourita som spara i local storage och hem.
  
 ## Använder API-Url som

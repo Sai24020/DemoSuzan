@@ -7,6 +7,11 @@
  
 ## Använder API-Url som
 `http://universities.hipolabs.com/search`och `http://universities.hipolabs.com/search?country=`
+http://universities.hipolabs.com/search?name=middle&country=turkey
+
+https://github.com/Hipo/university-domains-list som finns data här 
+https://raw.githubusercontent.com/Hipo/university-domains-list/refs/heads/master/world_universities_and_domains.json
+
 ## Och hämta flygländ ?!men funker inte ,,
 från `https://restcountries.com/v3.1/name/png/${encodeURIComponent(university.country)}
 

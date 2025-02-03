@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Universitetsöversikt med Flagga & Favoriter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  <header>
+    <h1>UNIVERSITETS Översikt</h1>
+  </header>
+  <nav>
+    <a id="navHome">HEM</a>
+    <a id="navFav">FAVORITER</a>
+  </nav>
+  <main>
+    <section id="homeSection" class="section active-section">
+      <p> klick <strong> green cirkel</strong> om vill spara<hr>
+         Skriv <strong>all</strong> för att visa alla universitet i alla länder eller<br> namnet på ett land för att visa dess universitet
+      </p>
+      <input type="text" id="countryInput" placeholder="t.ex. Palestine, Sweden, United States, all" />
+      <button id="searchBtn" class="searchBtn">Sök</button>
+      <div id="resultInfo"></div>
+      <div id="universityContainer"></div>
+      <div class="pagination" id="paginationControls"></div>
+    </section>
+
+    <section id="favoritesSection" class="section">
+      <h2>Mina Favoriter</h2>
+      <div class="fav-actions">
+        <button id="clearFavBtn">Ta bort alla favoriter</button>
+        <button id="backHomeBtn">Tillbaka till Hem</button>
+      </div>
+      <div>
+        <label for="countrySelect">Välj land:</label>
+        <select id="countrySelect" class="country-select">
+          <option value="">Alla länder</option>
+        </select>
+        <div id="countryInfo"></div>
+      </div>
+      <div id="favoritesContainer"></div>
+    </section>
+  </main>
+  <footer>
+    <p>Suzan - <span id="currentDate"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/* Grundläggande styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+}
+header, footer {
+  background: #007BFF;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  background: #0056b3;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+nav a:hover {
+  text-decoration: underline;
+  background-color: #007BFF;
+}
+main {
+  padding: 1rem 2rem;
+}
+.section {
+  display: none;
+}
+.active-section {
+  display: block;
+}
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  width: 17rem;
+}
+
+button {
+cursor: pointer;
+background-color: #007BFF;
+padding: 0.5rem;
+font-size: 1rem;
+margin: 0.5rem 0;
+border-radius: 15px;
+}
+
+button:hover {
+    box-shadow: 0 2px 4px rgba(199, 210, 205, 0.1);
+    background-color: rgb(209, 170, 14);
+}
+
+.university-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.country-flag {
+  width: 100px;
+  height: 70px;
+  margin-right: 1rem;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.university-info {
+  display: flex;
+  flex-direction: column;
+}
+.favorite-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 2px solid #fff;
+}
+.favorite {
+  background-color: green !important;
+}
+.remove-btn {
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.9rem;
+  background: #ff4d4d;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  width: fit-content;
+}
+.remove-btn:hover {
+  background: #ff1a1a;
+}
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pagination button {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #007BFF;
+  border-radius: 15px;
+
+}
+.pagination button:hover {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    color: #f9f9f9;
+}
+.page-number {
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.active {
+  background-color: #007BFF;
+  color: #fff;
+  border-color: #007BFF;
+}
+.fav-actions {
+  margin: 1rem 0;
+}
+.fav-actions button {
+  margin-right: 1rem;
+}
+.country-select {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}

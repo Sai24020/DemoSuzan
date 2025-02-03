@@ -61,6 +61,7 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
  // displayPage(currentPage);
  // createPaginationControls();
 //}); 1
+//api.js (Hantera API-anrop) fetchUniversities(country)
 
   const isAll = input.toLowerCase() === 'all';
   const apiUrl = isAll 
@@ -85,10 +86,10 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
     displayPage(currentPage);
     createPaginationControls();
   } catch (error) {
-    console.error("Fel vid hämtning av data:", error);
+    console.error("Fel vid hämtning av data:", error);  //Hanterar eventuella fel vid API-anrop.
   }
 });
-
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //2: Visar universitet per sida
 
 function displayPage(page) {

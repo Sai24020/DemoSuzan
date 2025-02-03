@@ -17,17 +17,20 @@ function toggleFavorite(university, circleElem) {
     circleElem.classList.remove('favorite');
   } else {
     favoriteUniversities.push(university);
-    circleElem.classList.add('favorite');
+    circleElem.classList.add('favorite');//spara i local storage som favurete
   }
   saveFavorites();
 }
 
 document.getElementById('searchBtn').addEventListener('click', async () => {
+ 
   const input = document.getElementById('countryInput').value.trim();
+ //kolla efter countryInput finns all..vissa hella lander
   if (!input) {
     alert("Vänligen skriv in ett land eller 'all'");
     return;
   }
+
   const isAll = input.toLowerCase() === 'all';
   const apiUrl = isAll 
                    ? `http://universities.hipolabs.com/search` 
@@ -258,3 +261,13 @@ function displayFavorites() {
 
 const currentDate = document.getElementById('currentDate');
 currentDate.textContent = new Date().toLocaleDateString();
+
+// Projektbeskrivning
+const projectSummary = {
+  theme: "Universitetsdatabas",
+  apiChoice: "Hipolabs Universities API & REST Countries API",
+  reasonForApiChoice: "Hipolabs API ger en omfattande lista över universitet globalt, och REST Countries API används för att hämta landsflaggor.",
+  biggestChallenges: "Hantering av API-data, korrekt visning av landsflaggor och implementering av favoritfunktionen med Local Storage."
+};
+
+console.log("Projektbeskrivning:", projectSummary);
